@@ -1,0 +1,49 @@
+.accordion {
+  background-color: #333;
+  color: #ddd;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-family: sans-serif;
+  margin: 10 5% 5 5%;
+  width: 40%;
+}
+.active, .accordion:hover {
+  background-color: #a03232;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin: -7 0 0 5%;
+  width: 38.1%;
+  font-family: sans-serif;
+}
+.panel input
+{
+    width: 60px;
+    margin: 0px 7px
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+#player {
+	display:none;
+}
